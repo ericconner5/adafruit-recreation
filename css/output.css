@@ -1,8 +1,3 @@
-* {
-  box-sizing: border-box;
-  border: 1px solid green;
-}
-
 body {
   font-family: proxima nova, lucida grande, lucida sans unicode, lucida sans, Geneva, Verdana, sans-serif;
   color: white;
@@ -19,18 +14,21 @@ body a:hover {
 
 .wrapper {
   width: 1300px;
-  height: 149px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.wrap-top {
+  height: 149px;
+  font-size: 16px;
+}
+
 .top-nav {
   background-color: black;
   width: 100%;
   height: 149px;
-  font-size: 16px;
 }
 
 .nav-row-top {
@@ -98,6 +96,100 @@ body a:hover {
 
 .menu-box {
   padding: 20px;
+}
+
+.wrap-body {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.body-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 782px;
+}
+
+#big-column {
+  width: 640px;
+}
+
+.body-row {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-box-small {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 320px;
+  height: 254px;
+  overflow: hidden;
+  position: relative;
+}
+.content-box-small img {
+  width: 100%;
+  height: auto;
+}
+.content-box-small a {
+  color: white;
+  font-size: 16px;
+}
+.content-box-small a:hover {
+  color: white;
+  text-decoration: none;
+}
+.content-box-small p {
+  color: white;
+  font-size: 14px;
+}
+
+.content-box-big {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 640px;
+  overflow: hidden;
+  position: relative;
+}
+.content-box-big img {
+  width: 100%;
+  height: 100%;
+}
+.content-box-big .text-overlay a {
+  color: white;
+  font-size: 30px;
+}
+.content-box-big .text-overlay a:hover {
+  color: white;
+  text-decoration: none;
+}
+.content-box-big .text-overlay p {
+  color: white;
+  font-size: 14px;
+}
+
+.text-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.footer {
+  background-color: black;
+  width: 100%;
+}
+
+.bottom-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=output.css.map */
